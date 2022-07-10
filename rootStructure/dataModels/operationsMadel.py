@@ -19,13 +19,39 @@ class SecretCode(BaseModel):
     code: str
 
 
+class Token_vk(BaseModel):
+    token: str
+
+
+class Phone_number(BaseModel):
+    phone: str
+
+
+# таблица юзера
 class user(SQLModel, table=True):
     id: Optional[int] = Field(primary_key=True)
     first_name: str
     last_name: str
     phone: str
     password: str
-    salt: int
+    role_id: int
+    active: bool
+    admin_comment: str
+    code_confirm_phone: int
+    blocked: bool
+    phone_confirm: bool
+    phone_confirm_attempts: int
+    dt_created: Optional[datetime.date] = date.today()
+    dt_updated: Optional[datetime.date] = date.today()
+    dt_deleted: Optional[datetime.date]
+
+
+# модуль добавления пользователя
+class New_user():
+    first_name: str
+    last_name: str
+    phone: str
+    password: str
     role_id: int
     active: bool
     admin_comment: str

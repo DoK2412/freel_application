@@ -14,7 +14,6 @@ class User(Base):
     last_name = sa.Column(sa.VARCHAR, nullable=True)
     phone = sa.Column(sa.BigInteger, nullable=True)
     password = sa.Column(sa.VARCHAR, nullable=True)
-    salt = sa.Column(sa.BigInteger, nullable=True)
     role_id = sa.Column(sa.Integer, sa.ForeignKey("user_role.id"))
     active = sa.Column(sa.Boolean, default=False)
     admin_comment = sa.Column(sa.TEXT)
