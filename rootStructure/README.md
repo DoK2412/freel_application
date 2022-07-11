@@ -50,7 +50,7 @@ False
       "detail": "Error working with the number confirmation service"
     }
 
-
+***
     `POST` `/end_registration`
      Request body (JSON):
     `{
@@ -75,7 +75,7 @@ False
       "detail": "The verification code is not correct"
     }
 
-
+***
     `POST` `/entrancevk`
      Request body (JSON):
     `{
@@ -98,7 +98,7 @@ False
     {
       "detail": "VK token is not valid"
     }
-
+***
     `POST` `/confirmation_phone`
      Request body (JSON):
     `{
@@ -121,7 +121,7 @@ False
     {
       "detail": "The number does not meet the standard +7, 8, 7 and 10 digits per line"
     }
-
+***
     `POST` `/confirmation_phone`
      Request body (JSON):
     `{
