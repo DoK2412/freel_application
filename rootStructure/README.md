@@ -11,8 +11,8 @@
         // Регистрация //
 
 
-`POST` `/beg_registration`
- Request body (JSON):
+    `POST` `/beg_registration`
+     Request body (JSON):
     `{
       "first_name": "first_name",
       "last_name": "last_name",
@@ -51,8 +51,8 @@ False
     }
 
 
-`POST` `/end_registration`
- Request body (JSON):
+    `POST` `/end_registration`
+     Request body (JSON):
     `{
         "code": "5724"
     }`
@@ -76,8 +76,8 @@ False
     }
 
 
-`POST` `/entrancevk`
- Request body (JSON):
+    `POST` `/entrancevk`
+     Request body (JSON):
     `{
         `token`: "token"
     }`
@@ -99,8 +99,8 @@ False
       "detail": "VK token is not valid"
     }
 
-`POST` `/confirmation_phone`
- Request body (JSON):
+    `POST` `/confirmation_phone`
+     Request body (JSON):
     `{
         `phone`: "phone"
     }`
@@ -122,8 +122,8 @@ False
       "detail": "The number does not meet the standard +7, 8, 7 and 10 digits per line"
     }
 
-`POST` `/confirmation_phone`
- Request body (JSON):
+    `POST` `/confirmation_phone`
+     Request body (JSON):
     `{
         `code`: "code"
     }`
